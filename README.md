@@ -9,7 +9,7 @@ A horrible attempt to make MySQL work with spatial queries in Rails 4.1. Could p
   * Example: `/geo/search/coords/Saint`  
 * `/geo/search/cities/:distance/:x/:y`
   * Fetches all cities, located at `:distance` (euclidean) or closer from the point, given by `:x` and `:y`
-  * Example: `/geo/search/coords/Saint`
+  * Example: `/geo/search/coords/30.0/0.0/100.0`
 
 Both queries also accept an extra parameter: `?page=X`. The system is designed to potentially handle large amounts of data, so data is paginated. For the purposes of demonstration, each page contains 5 cities.
 
